@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		D29680371DA98BB600F42E33 /* Reindeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680361DA98BB600F42E33 /* Reindeer.swift */; };
 		D29680381DA98BB600F42E33 /* Reindeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680361DA98BB600F42E33 /* Reindeer.swift */; };
+		D29680421DA99B8200F42E33 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680411DA99B8200F42E33 /* Document.swift */; };
+		D29680441DA99B8800F42E33 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680431DA99B8800F42E33 /* Element.swift */; };
+		D29680451DA99B8C00F42E33 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680431DA99B8800F42E33 /* Element.swift */; };
+		D29680461DA99B8E00F42E33 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680411DA99B8200F42E33 /* Document.swift */; };
+		D29680481DA99E6C00F42E33 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680471DA99E6C00F42E33 /* Error.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Reindeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Reindeer.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* Reindeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Reindeer.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		D29680361DA98BB600F42E33 /* Reindeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reindeer.swift; sourceTree = "<group>"; };
+		D29680411DA99B8200F42E33 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		D29680431DA99B8800F42E33 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		D29680471DA99E6C00F42E33 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Reindeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reindeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				D29680361DA98BB600F42E33 /* Reindeer.swift */,
+				D29680411DA99B8200F42E33 /* Document.swift */,
+				D29680431DA99B8800F42E33 /* Element.swift */,
+				D29680471DA99E6C00F42E33 /* Error.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -302,7 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29680481DA99E6C00F42E33 /* Error.swift in Sources */,
+				D29680421DA99B8200F42E33 /* Document.swift in Sources */,
 				D29680371DA98BB600F42E33 /* Reindeer.swift in Sources */,
+				D29680441DA99B8800F42E33 /* Element.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +331,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29680451DA99B8C00F42E33 /* Element.swift in Sources */,
 				D29680381DA98BB600F42E33 /* Reindeer.swift in Sources */,
+				D29680461DA99B8E00F42E33 /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
