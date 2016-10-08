@@ -1,5 +1,5 @@
 //
-//  Reindeer.swift
+//  Document.swift
 //  Reindeer
 //
 //  Created by Khoa Pham on 08/10/2016.
@@ -8,3 +8,10 @@
 
 import Foundation
 import Clibxml2
+
+class Document {
+
+  init() {
+    
+  }
+}

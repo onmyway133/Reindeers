@@ -29,4 +29,7 @@ Pod::Spec.new do |s|
     'SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]'   => '$(PODS_ROOT)/Reindeer/CocoaPods/watchsimulator'
   }
 
+  s.library = "xml2"
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
+
 end
