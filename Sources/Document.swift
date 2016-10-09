@@ -16,6 +16,9 @@ class Document {
   }
 
   let xmlDocument: xmlDocPtr
+  let rootElement: Element
+
+  // MARK: - Initialization
 
   convenience init(string: String, encoding: String.Encoding = .utf8, kind: DocumentKind = .xml) throws {
     guard let data = string.data(using: encoding)
@@ -42,7 +45,7 @@ class Document {
     try self.init(data: data)
   }
 
-  init(bytes: [Int8], kind: DocumentKind = .xml) throws {
+  convenience init(bytes: [Int8], kind: DocumentKind = .xml) throws {
     let options: Int32
 
     switch kind {
@@ -57,6 +60,15 @@ class Document {
       throw InternalError.lastError()
     }
 
+    self.init(document: document)
+  }
+
+  init(document: xmlDocPtr) {
     self.xmlDocument = document
+    self.rootElement = Element(node: xmlDocGetRootElement(document))
+  }
+
+  deinit {
+    xmlFreeDoc(xmlDocument)
   }
 }

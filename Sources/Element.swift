@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import Clibxml2
+
+class Element {
+
+  let xmlNode: xmlNodePtr
+
+  // MARK: - Initialization
+
+  init(node: xmlNodePtr) {
+    self.xmlNode = node
+  }
+}
