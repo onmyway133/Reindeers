@@ -78,6 +78,8 @@ class Tests: XCTestCase {
 
     XCTAssertEqual(body?.elements(XPath: "p").first?.content, "This is a paragraph.")
     XCTAssertEqual(body?.elements(XPath: "a").first?.attributes["href"], "http://www.w3schools.com")
+    XCTAssertNotNil(body?.elements(XPath: "a",
+                                   predicate: { return $0.attributes["href"]?.contains("w3schools") ?? false}).first)
   }
 
   func test4() {

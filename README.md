@@ -113,6 +113,9 @@ element.children(name: "item")
 ```swift
 let body = document.rootElement.firstChild(name: "body")
 body?.elements(XPath: "//a").first?.attributes["href"]
+body?.elements(XPath: "//div") { element in
+  return element.attributes["width"] == "100"
+}
 ```
 
 ## Installation
