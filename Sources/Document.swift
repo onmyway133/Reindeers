@@ -65,7 +65,7 @@ class Document {
 
   init(document: xmlDocPtr) {
     self.xmlDocument = document
-    self.rootElement = Element(node: xmlDocGetRootElement(document))
+    self.rootElement = Element(node: xmlDocGetRootElement(document), document: xmlDocument)
   }
 
   deinit {
