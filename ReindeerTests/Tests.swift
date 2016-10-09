@@ -54,7 +54,7 @@ class Tests: XCTestCase {
     XCTAssertEqual(channel?.child(index: 0)!.name, "title")
     XCTAssertEqual(channel?.child(index: 0)!.content, "W3Schools Home Page")
 
-    XCTAssertEqual(channel?.elements(XPath: "//item").count, 2)
+    XCTAssertEqual(channel?.elements(XPath: "item").count, 2)
   }
 
   func test3() {
