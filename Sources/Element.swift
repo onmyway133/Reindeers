@@ -9,7 +9,7 @@
 import Foundation
 import Clibxml2
 
-open class Element {
+open class Element: Equatable {
 
   let cNode: xmlNodePtr
 
@@ -22,35 +22,47 @@ open class Element {
   // MARK: - Info
 
   public lazy var ns: String? = {
-    return self.cNode.pointee.ns.toString()
+    return self.cNode.pointee.ns != nil ? self.cNode.pointee.ns.toString() : nil
   }()
 
   public lazy var prefix: String? = {
-    return self.cNode.pointee.ns.pointee.prefix.toString()
+    return self.cNode.pointee.ns != nil ? self.cNode.pointee.ns.pointee.prefix.toString() : nil
   }()
 
   public lazy var name: String? = {
-    return self.cNode.pointee.name.toString()
+    return self.cNode.pointee.name != nil ? self.cNode.pointee.name.toString() : nil
   }()
 
   public lazy var line: Int? = {
     return xmlGetLineNo(self.cNode)
   }()
 
-  public lazy var parent: Element = {
-    return Element(node: self.cNode.pointee.parent)
+  public lazy var parent: Element? = {
+    if let cParent = self.cNode.pointee.parent {
+      return Element(node: cParent)
+    }
+
+    return nil
   }()
 
   public lazy var content: String? = {
     return xmlNodeGetContent(self.cNode).toString()
   }()
 
-  public lazy var nextSibing: Element = {
-    return Element(node: self.cNode.pointee.next)
+  public lazy var nextSibling: Element? = {
+    if let cSibling = self.cNode.pointee.next {
+      return Element(node: cSibling)
+    }
+
+    return nil
   }()
 
-  public lazy var previousSibing: Element = {
-    return Element(node: self.cNode.pointee.prev)
+  public lazy var previousSibling: Element? = {
+    if let cSibling = self.cNode.pointee.prev {
+      return Element(node: cSibling)
+    }
+
+    return nil
   }()
 
   public lazy var attributes: [String: String] = {
@@ -68,49 +80,8 @@ open class Element {
 
     return dict
   }()
+}
 
-  public func children(predicate: ((Element, Int) -> Bool)? = nil) -> [Element] {
-    var elements = [Element]()
-    var cursor = self.cNode.pointee.children
-    var index = 0
-
-    while cursor != nil {
-      if cursor!.pointee.type == XML_ELEMENT_NODE {
-        let element = Element(node: cursor!)
-        if let predicate = predicate {
-          if predicate(element, index) {
-            elements.append(element)
-          }
-        } else {
-          elements.append(element)
-        }
-
-        index += 1
-      }
-
-      cursor = cursor?.pointee.next
-    }
-
-    return elements
-  }
-
-  public func children(name: String) -> [Element] {
-    return children { element, index in
-      return element.name == name
-    }
-  }
-
-  public func children(indexes: [Int]) -> [Element] {
-    return children { element, index in
-      return indexes.contains(index)
-    }
-  }
-
-  public func child(index: Int) -> Element? {
-    return children(indexes: [index]).first
-  }
-
-  public func firstChild(name: String) -> Element? {
-    return children(name: name).first
-  }
+public func == (left: Element, right: Element) -> Bool {
+  return left.cNode == right.cNode
 }

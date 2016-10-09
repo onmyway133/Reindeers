@@ -20,6 +20,8 @@ class Tests: XCTestCase {
     XCTAssertEqual(document.encoding, "UTF-8")
 
     XCTAssertEqual(document.rootElement.name, "CATALOG")
+    XCTAssertNil(document.rootElement.nextSibling)
+    XCTAssertNil(document.rootElement.previousSibling)
 
     XCTAssertEqual(document.rootElement.children().count, 26)
     XCTAssertEqual(document.rootElement.children(name: "CD").count, 26)
@@ -53,6 +55,7 @@ class Tests: XCTestCase {
     XCTAssertEqual(channel?.children(name: "item").count, 2)
     XCTAssertEqual(channel?.child(index: 0)!.name, "title")
     XCTAssertEqual(channel?.child(index: 0)!.content, "W3Schools Home Page")
+    XCTAssertEqual(channel?.parent, document.rootElement)
 
     XCTAssertEqual(channel?.elements(XPath: "item").count, 2)
   }
@@ -66,6 +69,9 @@ class Tests: XCTestCase {
 
     let head = document.rootElement.child(index: 0)
     XCTAssertEqual(head?.children().count, 1)
+    XCTAssertNil(head?.prefix)
+    XCTAssertNil(head?.ns)
+    XCTAssertEqual(head?.line, 3)
 
     let body = document.rootElement.child(index: 1)
     XCTAssertEqual(body?.children().count, 3)

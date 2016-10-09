@@ -48,10 +48,14 @@ body?.elements(XPath: "p").first?.content
 
 ```swift
 let element = document.rootElement.child(index: 0)
+
 element.name
 element.ns
 element.line
 element.attributes
+element.parent
+element.nextSibling
+element.previousSibling
 ```
 
 - Get child elements

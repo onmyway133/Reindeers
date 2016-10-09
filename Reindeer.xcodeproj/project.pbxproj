@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2525A551DAAD1AB002E759E /* Element+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2525A541DAAD1AB002E759E /* Element+Query.swift */; };
+		D2525A561DAAD1AB002E759E /* Element+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2525A541DAAD1AB002E759E /* Element+Query.swift */; };
 		D29680371DA98BB600F42E33 /* Reindeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680361DA98BB600F42E33 /* Reindeer.swift */; };
 		D29680381DA98BB600F42E33 /* Reindeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680361DA98BB600F42E33 /* Reindeer.swift */; };
 		D29680421DA99B8200F42E33 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680411DA99B8200F42E33 /* Document.swift */; };
@@ -52,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2525A541DAAD1AB002E759E /* Element+Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element+Query.swift"; sourceTree = "<group>"; };
 		D29680361DA98BB600F42E33 /* Reindeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reindeer.swift; sourceTree = "<group>"; };
 		D29680411DA99B8200F42E33 /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		D29680431DA99B8800F42E33 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
@@ -151,6 +154,7 @@
 				D29680471DA99E6C00F42E33 /* Error.swift */,
 				D296804B1DAA311100F42E33 /* Extensions.swift */,
 				D296804E1DAA691A00F42E33 /* Element+XPath.swift */,
+				D2525A541DAAD1AB002E759E /* Element+Query.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -355,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D296804C1DAA311100F42E33 /* Extensions.swift in Sources */,
+				D2525A551DAAD1AB002E759E /* Element+Query.swift in Sources */,
 				D29680481DA99E6C00F42E33 /* Error.swift in Sources */,
 				D296804F1DAA691A00F42E33 /* Element+XPath.swift in Sources */,
 				D29680421DA99B8200F42E33 /* Document.swift in Sources */,
@@ -376,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2525A561DAAD1AB002E759E /* Element+Query.swift in Sources */,
 				D29680451DA99B8C00F42E33 /* Element.swift in Sources */,
 				D29680501DAA691A00F42E33 /* Element+XPath.swift in Sources */,
 				D29680381DA98BB600F42E33 /* Reindeer.swift in Sources */,
