@@ -10,9 +10,9 @@ import Foundation
 
 class Utils {
 
-  static func load(fileName: String) -> Data {
+  static func load(fileName: String, ext: String) -> Data {
     let bundle = Bundle(for: self)
-    let path = bundle.path(forResource: fileName, ofType: "xml")
+    let path = bundle.path(forResource: fileName, ofType: ext)
 
     return try! Data(contentsOf: URL(fileURLWithPath: path!))
   }

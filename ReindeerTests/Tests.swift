@@ -12,7 +12,8 @@ import Reindeer
 class Tests: XCTestCase {
 
   func test1() {
-    let data = Utils.load(fileName: "test1")
+    // http://www.w3schools.com/xml/cd_catalog.xml
+    let data = Utils.load(fileName: "test1", ext: "xml")
     let document = try! Document(data: data)
 
     XCTAssertEqual(document.version, "1.0")
@@ -29,10 +30,13 @@ class Tests: XCTestCase {
     XCTAssertEqual(cd?.child(index: 0)?.name, "TITLE")
     XCTAssertEqual(cd?.child(index: 0)?.content, "Greatest Hits")
     XCTAssertEqual(cd?.firstChild(name: "ARTIST")?.content, "Dolly Parton")
+
+    XCTAssertEqual(document.rootElement.elements(XPath: "//TITLE").count, 26)
   }
 
   func test2() {
-    let data = Utils.load(fileName: "test2")
+    // http://www.w3schools.com/xml/xml_rss.asp
+    let data = Utils.load(fileName: "test2", ext: "xml")
     let document = try! Document(data: data)
 
     XCTAssertEqual(document.version, "1.0")
@@ -49,6 +53,26 @@ class Tests: XCTestCase {
     XCTAssertEqual(channel?.children(name: "item").count, 2)
     XCTAssertEqual(channel?.child(index: 0)!.name, "title")
     XCTAssertEqual(channel?.child(index: 0)!.content, "W3Schools Home Page")
+
+    XCTAssertEqual(channel?.elements(XPath: "//item").count, 2)
+  }
+
+  func test3() {
+    let data = Utils.load(fileName: "test3", ext: "html")
+//    let document = try! Document(data: data)
+
+  }
+
+  func test4() {
+    // http://www.w3schools.com/graphics/svg_intro.asp
+    let data = Utils.load(fileName: "test4", ext: "svg")
+    let document = try! Document(data: data)
+
+    XCTAssertEqual(document.rootElement.name, "html")
+    XCTAssertEqual(document.rootElement.children().count, 1)
+
+    XCTAssertEqual(document.rootElement.elements(XPath: "//svg").first?.attributes["width"], "100")
+    XCTAssertEqual(document.rootElement.elements(XPath: "//circle").first?.attributes["stroke"], "green")
   }
 
 }

@@ -16,8 +16,8 @@
 		D29680481DA99E6C00F42E33 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680471DA99E6C00F42E33 /* Error.swift */; };
 		D296804C1DAA311100F42E33 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296804B1DAA311100F42E33 /* Extensions.swift */; };
 		D296804D1DAA311100F42E33 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296804B1DAA311100F42E33 /* Extensions.swift */; };
-		D296804F1DAA691A00F42E33 /* XPathAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296804E1DAA691A00F42E33 /* XPathAware.swift */; };
-		D29680501DAA691A00F42E33 /* XPathAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296804E1DAA691A00F42E33 /* XPathAware.swift */; };
+		D296804F1DAA691A00F42E33 /* Element+XPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296804E1DAA691A00F42E33 /* Element+XPath.swift */; };
+		D29680501DAA691A00F42E33 /* Element+XPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296804E1DAA691A00F42E33 /* Element+XPath.swift */; };
 		D29680521DAA773900F42E33 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680511DAA773900F42E33 /* Tests.swift */; };
 		D29680531DAA773900F42E33 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680511DAA773900F42E33 /* Tests.swift */; };
 		D29680551DAA777F00F42E33 /* test1.xml in Resources */ = {isa = PBXBuildFile; fileRef = D29680541DAA777F00F42E33 /* test1.xml */; };
@@ -26,6 +26,10 @@
 		D29680591DAA778A00F42E33 /* test2.xml in Resources */ = {isa = PBXBuildFile; fileRef = D29680571DAA778A00F42E33 /* test2.xml */; };
 		D296805B1DAA779700F42E33 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296805A1DAA779700F42E33 /* Utils.swift */; };
 		D296805C1DAA779700F42E33 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296805A1DAA779700F42E33 /* Utils.swift */; };
+		D2B75A881DAA94AF00178EB7 /* test3.html in Resources */ = {isa = PBXBuildFile; fileRef = D2B75A871DAA94AF00178EB7 /* test3.html */; };
+		D2B75A891DAA94AF00178EB7 /* test3.html in Resources */ = {isa = PBXBuildFile; fileRef = D2B75A871DAA94AF00178EB7 /* test3.html */; };
+		D2B75A8B1DAA94B900178EB7 /* test4.svg in Resources */ = {isa = PBXBuildFile; fileRef = D2B75A8A1DAA94B900178EB7 /* test4.svg */; };
+		D2B75A8C1DAA94B900178EB7 /* test4.svg in Resources */ = {isa = PBXBuildFile; fileRef = D2B75A8A1DAA94B900178EB7 /* test4.svg */; };
 		D5B2E8AA1C3A780C00C0327D /* Reindeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Reindeer.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* Reindeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Reindeer.framework */; };
 /* End PBXBuildFile section */
@@ -53,11 +57,13 @@
 		D29680431DA99B8800F42E33 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		D29680471DA99E6C00F42E33 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		D296804B1DAA311100F42E33 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		D296804E1DAA691A00F42E33 /* XPathAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPathAware.swift; sourceTree = "<group>"; };
+		D296804E1DAA691A00F42E33 /* Element+XPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element+XPath.swift"; sourceTree = "<group>"; };
 		D29680511DAA773900F42E33 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		D29680541DAA777F00F42E33 /* test1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test1.xml; sourceTree = "<group>"; };
 		D29680571DAA778A00F42E33 /* test2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test2.xml; sourceTree = "<group>"; };
 		D296805A1DAA779700F42E33 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D2B75A871DAA94AF00178EB7 /* test3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test3.html; sourceTree = "<group>"; };
+		D2B75A8A1DAA94B900178EB7 /* test4.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test4.svg; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Reindeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reindeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,7 +150,7 @@
 				D29680431DA99B8800F42E33 /* Element.swift */,
 				D29680471DA99E6C00F42E33 /* Error.swift */,
 				D296804B1DAA311100F42E33 /* Extensions.swift */,
-				D296804E1DAA691A00F42E33 /* XPathAware.swift */,
+				D296804E1DAA691A00F42E33 /* Element+XPath.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -158,6 +164,8 @@
 				D29680541DAA777F00F42E33 /* test1.xml */,
 				D29680571DAA778A00F42E33 /* test2.xml */,
 				D296805A1DAA779700F42E33 /* Utils.swift */,
+				D2B75A871DAA94AF00178EB7 /* test3.html */,
+				D2B75A8A1DAA94B900178EB7 /* test4.svg */,
 			);
 			path = ReindeerTests;
 			sourceTree = "<group>";
@@ -315,7 +323,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D29680581DAA778A00F42E33 /* test2.xml in Resources */,
+				D2B75A881DAA94AF00178EB7 /* test3.html in Resources */,
 				D29680551DAA777F00F42E33 /* test1.xml in Resources */,
+				D2B75A8B1DAA94B900178EB7 /* test4.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +341,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D29680591DAA778A00F42E33 /* test2.xml in Resources */,
+				D2B75A891DAA94AF00178EB7 /* test3.html in Resources */,
 				D29680561DAA777F00F42E33 /* test1.xml in Resources */,
+				D2B75A8C1DAA94B900178EB7 /* test4.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +356,7 @@
 			files = (
 				D296804C1DAA311100F42E33 /* Extensions.swift in Sources */,
 				D29680481DA99E6C00F42E33 /* Error.swift in Sources */,
-				D296804F1DAA691A00F42E33 /* XPathAware.swift in Sources */,
+				D296804F1DAA691A00F42E33 /* Element+XPath.swift in Sources */,
 				D29680421DA99B8200F42E33 /* Document.swift in Sources */,
 				D29680371DA98BB600F42E33 /* Reindeer.swift in Sources */,
 				D29680441DA99B8800F42E33 /* Element.swift in Sources */,
@@ -365,7 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D29680451DA99B8C00F42E33 /* Element.swift in Sources */,
-				D29680501DAA691A00F42E33 /* XPathAware.swift in Sources */,
+				D29680501DAA691A00F42E33 /* Element+XPath.swift in Sources */,
 				D29680381DA98BB600F42E33 /* Reindeer.swift in Sources */,
 				D29680461DA99B8E00F42E33 /* Document.swift in Sources */,
 				D296804D1DAA311100F42E33 /* Extensions.swift in Sources */,

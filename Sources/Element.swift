@@ -9,7 +9,7 @@
 import Foundation
 import Clibxml2
 
-open class Element: XPathAware {
+open class Element {
 
   let cNode: xmlNodePtr
 
