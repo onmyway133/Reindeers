@@ -106,6 +106,7 @@ element.children { child, index in
 }
 
 element.children(name: "item")
+element.children(indexes: [0, 2, 4])
 ```
 
 - XPath
