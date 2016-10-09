@@ -13,8 +13,29 @@ class Document {
 
   let xmlDocument: xmlDocPtr
 
-  init(data: NSData, encoding: String.Encoding = .utf8) throws {
+  convenience init(data: Data) throws {
+    let bytes = data.withUnsafeBytes {
+      [Int8](UnsafeBufferPointer(start: $0, count: data.count))
+    }
+
+    try self.init(bytes: bytes)
+  }
+
+  convenience init(nsData: NSData) throws {
+    var bytes = [UInt8](repeatElement(0, count: nsData.length))
+    nsData.getBytes(&bytes, length:bytes.count * MemoryLayout<UInt8>.size)
+    let data = Data(bytes: bytes)
+
+    try self.init(data: data)
+  }
+
+  init(bytes: [Int8]) throws {
     let options = Int32(XML_PARSE_NOWARNING.rawValue | XML_PARSE_NOERROR.rawValue | XML_PARSE_RECOVER.rawValue)
-    xmlDocument = xmlReadMemory(nil, Int32(data.length), "", nil, options)
+    guard let document = xmlReadMemory(bytes, Int32(bytes.count), "", nil, options)
+    else {
+      throw InternalError.lastError()
+    }
+
+    self.xmlDocument = document
   }
 }
