@@ -59,8 +59,19 @@ class Tests: XCTestCase {
 
   func test3() {
     let data = Utils.load(fileName: "test3", ext: "html")
-//    let document = try! Document(data: data)
+    let document = try! Document(data: data, kind: .html)
 
+    XCTAssertEqual(document.rootElement.name, "html")
+    XCTAssertEqual(document.rootElement.children().count, 2)
+
+    let head = document.rootElement.child(index: 0)
+    XCTAssertEqual(head?.children().count, 1)
+
+    let body = document.rootElement.child(index: 1)
+    XCTAssertEqual(body?.children().count, 3)
+
+    XCTAssertEqual(body?.elements(XPath: "p").first?.content, "This is a paragraph.")
+    XCTAssertEqual(body?.elements(XPath: "a").first?.attributes["href"], "http://www.w3schools.com")
   }
 
   func test4() {
