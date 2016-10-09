@@ -19,18 +19,29 @@ xml in Swift
 
 ### XML, SVG, RSS
 
-```swift
-let data = Utils.load(fileName: "test1", ext: "xml")
-let document = try? Document(data: data)
+```xml
+<html>
+<body>
 
-document.version
-document.encoding
+<h1>My first SVG</h1>
+
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+</body>
+</html
+```
+
+```swift
+let data = Utils.load(fileName: "test4", ext: "svg")
+let document = try! Document(data: data)
 
 document.rootElement.name
+document.rootElement.children()
 
-document.rootElement.child(index: 2)?.name
-document.rootElement.elements(XPath: "//TITLE")
-document.rootElement.elements(XPath: "//svg")
+document.rootElement.elements(XPath: "//svg").first?.attributes["width"]
+document.rootElement.elements(XPath: "//circle").first?.attributes["stroke"]
 ```
 
 ### HTML
@@ -40,7 +51,7 @@ let data = Utils.load(fileName: "test3", ext: "html")
 let document = try? Document(data: data, kind: .html)
 
 let body = document.rootElement.child(index: 1)
-body?.elements(XPath: "p").first?.content
+body?.elements(XPath: "//p").first?.content
 ```
 
 ### Query
@@ -73,7 +84,7 @@ element.children(name: "item")
 
 ```swift
 let body = document.rootElement.firstChild(name: "body")
-body?.elements(XPath: "a").first?.attributes["href"]
+body?.elements(XPath: "//a").first?.attributes["href"]
 ```
 
 ## Installation
