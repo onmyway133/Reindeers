@@ -8,6 +8,13 @@
 
 import Foundation
 
+extension UnsafePointer {
+
+  func toString() -> String? {
+    return String(validatingUTF8: UnsafeRawPointer(self).assumingMemoryBound(to: Int8.self))
+  }
+}
+
 extension UnsafeMutablePointer {
 
   func toString() -> String? {

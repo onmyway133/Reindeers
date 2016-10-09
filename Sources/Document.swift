@@ -71,4 +71,14 @@ class Document {
   deinit {
     xmlFreeDoc(xmlDocument)
   }
+
+  // MARK: - Info
+
+  var version: String? {
+    return xmlDocument.pointee.version.toString()
+  }
+
+  var encoding: String? {
+    return xmlDocument.pointee.encoding.toString()
+  }
 }
