@@ -55,6 +55,22 @@ class Element {
     return Element(node: self.xmlNode.pointee.prev, document: self.xmlDocument)
   }()
 
+  lazy var attributes: [String: Any] = {
+    var dict: [String: Any] = [:]
+
+    var property = self.xmlNode.pointee.properties
+    while property != nil {
+      if let property = property, let name = property.pointee.name.toString() {
+        let value = xmlGetProp(self.xmlNode, property.pointee.name).toString()
+        dict[name] = value
+      }
+
+      property = property?.pointee.next
+    }
+
+    return dict
+  }()
+
   func children(predicate: (Element, Int) -> Bool) -> [Element] {
     var elements = [Element]()
     var cursor = self.xmlNode.pointee.children

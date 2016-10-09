@@ -38,6 +38,10 @@ github "onmyway133/Reindeer"
 
 Khoa Pham, onmyway133@gmail.com
 
+## Credit
+
+- https://github.com/mattt/Ono
+
 ## Contributing
 
 We would love you to contribute to **Reindeer**, check the [CONTRIBUTING](https://github.com/onmyway133/Reindeer/blob/master/CONTRIBUTING.md) file for more info.
