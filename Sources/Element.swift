@@ -69,7 +69,7 @@ open class Element: XPathAware {
     return dict
   }()
 
-  public func children(predicate: (Element, Int) -> Bool) -> [Element] {
+  public func children(predicate: ((Element, Int) -> Bool)? = nil) -> [Element] {
     var elements = [Element]()
     var cursor = self.cNode.pointee.children
     var index = 0
@@ -77,7 +77,7 @@ open class Element: XPathAware {
     while cursor != nil {
       if let cursor = cursor, cursor.pointee.type == XML_ELEMENT_NODE {
         let element = Element(node: cursor)
-        if predicate(element, index) {
+        if let predicate = predicate, predicate(element, index) {
           elements.append(element)
         }
       }
@@ -99,5 +99,9 @@ open class Element: XPathAware {
     return children { element, index in
       return indexes.contains(index)
     }
+  }
+
+  public func child(index: Int) -> Element? {
+    return children(indexes: [index]).first
   }
 }
