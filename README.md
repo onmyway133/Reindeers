@@ -43,6 +43,7 @@ Khoa Pham, onmyway133@gmail.com
 ## Credit
 
 - https://github.com/mattt/Ono
+- http://www.nokogiri.org/
 
 ## Contributing
 

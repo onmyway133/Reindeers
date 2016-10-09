@@ -53,8 +53,8 @@ open class Element: XPathAware {
     return Element(node: self.cNode.pointee.prev)
   }()
 
-  public lazy var attributes: [String: Any] = {
-    var dict: [String: Any] = [:]
+  public lazy var attributes: [String: String] = {
+    var dict: [String: String] = [:]
 
     var property = self.cNode.pointee.properties
     while property != nil {
@@ -75,14 +75,19 @@ open class Element: XPathAware {
     var index = 0
 
     while cursor != nil {
-      if let cursor = cursor, cursor.pointee.type == XML_ELEMENT_NODE {
-        let element = Element(node: cursor)
-        if let predicate = predicate, predicate(element, index) {
+      if cursor!.pointee.type == XML_ELEMENT_NODE {
+        let element = Element(node: cursor!)
+        if let predicate = predicate {
+          if predicate(element, index) {
+            elements.append(element)
+          }
+        } else {
           elements.append(element)
         }
+
+        index += 1
       }
 
-      index += 1
       cursor = cursor?.pointee.next
     }
 
@@ -103,5 +108,9 @@ open class Element: XPathAware {
 
   public func child(index: Int) -> Element? {
     return children(indexes: [index]).first
+  }
+
+  public func firstChild(name: String) -> Element? {
+    return children(name: name).first
   }
 }
