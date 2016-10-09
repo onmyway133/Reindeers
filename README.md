@@ -46,6 +46,34 @@ document.rootElement.elements(XPath: "//circle").first?.attributes["stroke"]
 
 ### HTML
 
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        color: blue;
+        font-family: verdana;
+        font-size: 300%;
+
+      }
+    p  {
+      color: red;
+      font-family: courier;
+      font-size: 160%;
+    }
+    </style>
+  </head>
+  <body>
+
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <a href="http://www.w3schools.com">Visit W3Schools</a>
+    
+  </body>
+</html>
+```
+
 ```swift
 let data = Utils.load(fileName: "test3", ext: "html")
 let document = try? Document(data: data, kind: .html)
