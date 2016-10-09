@@ -9,16 +9,14 @@
 import Foundation
 import Clibxml2
 
-class Element {
+class Element: XPathAware {
 
   let xmlNode: xmlNodePtr
-  let xmlDocument: xmlDocPtr
 
   // MARK: - Initialization
 
-  init(node: xmlNodePtr, document: xmlDocPtr) {
+  init(node: xmlNodePtr) {
     self.xmlNode = node
-    self.xmlDocument = document
   }
 
   // MARK: - Info
@@ -40,7 +38,7 @@ class Element {
   }()
 
   lazy var parent: Element = {
-    return Element(node: self.xmlNode.pointee.parent, document: self.xmlDocument)
+    return Element(node: self.xmlNode.pointee.parent)
   }()
 
   lazy var content: String? = {
@@ -48,11 +46,11 @@ class Element {
   }()
 
   lazy var nextSibing: Element = {
-    return Element(node: self.xmlNode.pointee.next, document: self.xmlDocument)
+    return Element(node: self.xmlNode.pointee.next)
   }()
 
   lazy var previousSibing: Element = {
-    return Element(node: self.xmlNode.pointee.prev, document: self.xmlDocument)
+    return Element(node: self.xmlNode.pointee.prev)
   }()
 
   lazy var attributes: [String: Any] = {
@@ -78,7 +76,7 @@ class Element {
 
     while cursor != nil {
       if let cursor = cursor, cursor.pointee.type == XML_ELEMENT_NODE {
-        let element = Element(node: cursor, document: self.xmlDocument)
+        let element = Element(node: cursor)
         if predicate(element, index) {
           elements.append(element)
         }
