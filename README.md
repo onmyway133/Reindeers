@@ -30,6 +30,7 @@ document.rootElement.name
 
 document.rootElement.child(index: 2)?.name
 document.rootElement.elements(XPath: "//TITLE")
+document.rootElement.elements(XPath: "//svg")
 ```
 
 ### HTML
@@ -96,8 +97,6 @@ github "onmyway133/Reindeer"
 ## Author
 
 Khoa Pham, onmyway133@gmail.com
-
-- http://www.nokogiri.org/
 
 ## Contributing
 
