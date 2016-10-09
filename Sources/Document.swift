@@ -9,18 +9,18 @@
 import Foundation
 import Clibxml2
 
-class Document {
+open class Document {
 
-  enum DocumentKind {
+  public enum DocumentKind {
     case xml, html
   }
 
   let cDocument: xmlDocPtr
-  let rootElement: Element
+  public let rootElement: Element
 
   // MARK: - Initialization
 
-  convenience init(string: String, encoding: String.Encoding = .utf8, kind: DocumentKind = .xml) throws {
+  public convenience init(string: String, encoding: String.Encoding = .utf8, kind: DocumentKind = .xml) throws {
     guard let data = string.data(using: encoding)
     else {
       throw InternalError.unknown
@@ -29,7 +29,7 @@ class Document {
     try self.init(data: data, kind: kind)
   }
 
-  convenience init(data: Data, kind: DocumentKind = .xml) throws {
+  public convenience init(data: Data, kind: DocumentKind = .xml) throws {
     let bytes = data.withUnsafeBytes {
       [Int8](UnsafeBufferPointer(start: $0, count: data.count))
     }
@@ -37,7 +37,7 @@ class Document {
     try self.init(bytes: bytes)
   }
 
-  convenience init(nsData: NSData, kind: DocumentKind = .xml) throws {
+  public convenience init(nsData: NSData, kind: DocumentKind = .xml) throws {
     var bytes = [UInt8](repeatElement(0, count: nsData.length))
     nsData.getBytes(&bytes, length:bytes.count * MemoryLayout<UInt8>.size)
     let data = Data(bytes: bytes)
@@ -45,7 +45,7 @@ class Document {
     try self.init(data: data)
   }
 
-  convenience init(bytes: [Int8], kind: DocumentKind = .xml) throws {
+  public convenience init(bytes: [Int8], kind: DocumentKind = .xml) throws {
     let options: Int32
 
     switch kind {
@@ -74,11 +74,11 @@ class Document {
 
   // MARK: - Info
 
-  var version: String? {
+  open var version: String? {
     return cDocument.pointee.version.toString()
   }
 
-  var encoding: String? {
+  open var encoding: String? {
     return cDocument.pointee.encoding.toString()
   }
 }

@@ -9,51 +9,51 @@
 import Foundation
 import Clibxml2
 
-class Element: XPathAware {
+open class Element: XPathAware {
 
   let cNode: xmlNodePtr
 
   // MARK: - Initialization
 
-  init(node: xmlNodePtr) {
+  public init(node: xmlNodePtr) {
     self.cNode = node
   }
 
   // MARK: - Info
 
-  lazy var ns: String? = {
+  public lazy var ns: String? = {
     return self.cNode.pointee.ns.toString()
   }()
 
-  lazy var prefix: String? = {
+  public lazy var prefix: String? = {
     return self.cNode.pointee.ns.pointee.prefix.toString()
   }()
 
-  lazy var name: String? = {
+  public lazy var name: String? = {
     return self.cNode.pointee.name.toString()
   }()
 
-  lazy var line: Int? = {
+  public lazy var line: Int? = {
     return xmlGetLineNo(self.cNode)
   }()
 
-  lazy var parent: Element = {
+  public lazy var parent: Element = {
     return Element(node: self.cNode.pointee.parent)
   }()
 
-  lazy var content: String? = {
+  public lazy var content: String? = {
     return xmlNodeGetContent(self.cNode).toString()
   }()
 
-  lazy var nextSibing: Element = {
+  public lazy var nextSibing: Element = {
     return Element(node: self.cNode.pointee.next)
   }()
 
-  lazy var previousSibing: Element = {
+  public lazy var previousSibing: Element = {
     return Element(node: self.cNode.pointee.prev)
   }()
 
-  lazy var attributes: [String: Any] = {
+  public lazy var attributes: [String: Any] = {
     var dict: [String: Any] = [:]
 
     var property = self.cNode.pointee.properties
@@ -69,7 +69,7 @@ class Element: XPathAware {
     return dict
   }()
 
-  func children(predicate: (Element, Int) -> Bool) -> [Element] {
+  public func children(predicate: (Element, Int) -> Bool) -> [Element] {
     var elements = [Element]()
     var cursor = self.cNode.pointee.children
     var index = 0
@@ -89,13 +89,13 @@ class Element: XPathAware {
     return elements
   }
 
-  func children(name: String) -> [Element] {
+  public func children(name: String) -> [Element] {
     return children { element, index in
       return element.name == name
     }
   }
 
-  func children(indexes: [Int]) -> [Element] {
+  public func children(indexes: [Int]) -> [Element] {
     return children { element, index in
       return indexes.contains(index)
     }
