@@ -19,6 +19,8 @@
 		D296804D1DAA311100F42E33 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296804B1DAA311100F42E33 /* Extensions.swift */; };
 		D296804F1DAA691A00F42E33 /* XPathAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296804E1DAA691A00F42E33 /* XPathAware.swift */; };
 		D29680501DAA691A00F42E33 /* XPathAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296804E1DAA691A00F42E33 /* XPathAware.swift */; };
+		D29680521DAA773900F42E33 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680511DAA773900F42E33 /* Tests.swift */; };
+		D29680531DAA773900F42E33 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680511DAA773900F42E33 /* Tests.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Reindeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Reindeer.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* Reindeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Reindeer.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,7 @@
 		D29680491DAA30D200F42E33 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D296804B1DAA311100F42E33 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D296804E1DAA691A00F42E33 /* XPathAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPathAware.swift; sourceTree = "<group>"; };
+		D29680511DAA773900F42E33 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Reindeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reindeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +148,7 @@
 			children = (
 				D5C629901C3A8BDA007F7B7C /* Info-iOS.plist */,
 				D5C629911C3A8BDA007F7B7C /* Info-Mac.plist */,
+				D29680511DAA773900F42E33 /* Tests.swift */,
 			);
 			path = ReindeerTests;
 			sourceTree = "<group>";
@@ -265,6 +269,7 @@
 					};
 					D5C629481C3A7FAA007F7B7C = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -338,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29680521DAA773900F42E33 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29680531DAA773900F42E33 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +615,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -620,6 +628,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Reindeer-MacTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -627,6 +637,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -639,6 +650,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Reindeer-MacTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

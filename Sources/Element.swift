@@ -11,55 +11,55 @@ import Clibxml2
 
 class Element: XPathAware {
 
-  let xmlNode: xmlNodePtr
+  let cNode: xmlNodePtr
 
   // MARK: - Initialization
 
   init(node: xmlNodePtr) {
-    self.xmlNode = node
+    self.cNode = node
   }
 
   // MARK: - Info
 
   lazy var ns: String? = {
-    return self.xmlNode.pointee.ns.toString()
+    return self.cNode.pointee.ns.toString()
   }()
 
   lazy var prefix: String? = {
-    return self.xmlNode.pointee.ns.pointee.prefix.toString()
+    return self.cNode.pointee.ns.pointee.prefix.toString()
   }()
 
   lazy var name: String? = {
-    return self.xmlNode.pointee.name.toString()
+    return self.cNode.pointee.name.toString()
   }()
 
   lazy var line: Int? = {
-    return xmlGetLineNo(self.xmlNode)
+    return xmlGetLineNo(self.cNode)
   }()
 
   lazy var parent: Element = {
-    return Element(node: self.xmlNode.pointee.parent)
+    return Element(node: self.cNode.pointee.parent)
   }()
 
   lazy var content: String? = {
-    return xmlNodeGetContent(self.xmlNode).toString()
+    return xmlNodeGetContent(self.cNode).toString()
   }()
 
   lazy var nextSibing: Element = {
-    return Element(node: self.xmlNode.pointee.next)
+    return Element(node: self.cNode.pointee.next)
   }()
 
   lazy var previousSibing: Element = {
-    return Element(node: self.xmlNode.pointee.prev)
+    return Element(node: self.cNode.pointee.prev)
   }()
 
   lazy var attributes: [String: Any] = {
     var dict: [String: Any] = [:]
 
-    var property = self.xmlNode.pointee.properties
+    var property = self.cNode.pointee.properties
     while property != nil {
       if let property = property, let name = property.pointee.name.toString() {
-        let value = xmlGetProp(self.xmlNode, property.pointee.name).toString()
+        let value = xmlGetProp(self.cNode, property.pointee.name).toString()
         dict[name] = value
       }
 
@@ -71,7 +71,7 @@ class Element: XPathAware {
 
   func children(predicate: (Element, Int) -> Bool) -> [Element] {
     var elements = [Element]()
-    var cursor = self.xmlNode.pointee.children
+    var cursor = self.cNode.pointee.children
     var index = 0
 
     while cursor != nil {

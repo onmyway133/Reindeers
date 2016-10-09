@@ -15,7 +15,7 @@ class Document {
     case xml, html
   }
 
-  let xmlDocument: xmlDocPtr
+  let cDocument: xmlDocPtr
   let rootElement: Element
 
   // MARK: - Initialization
@@ -64,21 +64,21 @@ class Document {
   }
 
   init(document: xmlDocPtr) {
-    self.xmlDocument = document
+    self.cDocument = document
     self.rootElement = Element(node: xmlDocGetRootElement(document))
   }
 
   deinit {
-    xmlFreeDoc(xmlDocument)
+    xmlFreeDoc(cDocument)
   }
 
   // MARK: - Info
 
   var version: String? {
-    return xmlDocument.pointee.version.toString()
+    return cDocument.pointee.version.toString()
   }
 
   var encoding: String? {
-    return xmlDocument.pointee.encoding.toString()
+    return cDocument.pointee.encoding.toString()
   }
 }
