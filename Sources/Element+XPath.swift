@@ -12,7 +12,7 @@ import Clibxml2
 public extension Element {
 
   func elements(XPath: String, namespace: String? = nil, predicate: ((Element) -> Bool)? = nil) -> [Element] {
-    guard let cXPath = cXPathObject(XPath: XPath)
+    guard let cXPath = cXPathObject(XPath: XPath, namespace: namespace)
     else {
       return []
     }
