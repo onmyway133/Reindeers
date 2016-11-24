@@ -54,7 +54,8 @@ public extension Element {
     while node.pointee.parent != nil {
       var ns = node.pointee.nsDef
       while ns != nil {
-        if let prefix = ns?.pointee.prefix, let href = ns?.pointee.href {
+        if let href = ns?.pointee.href,
+          let prefix = ns?.pointee.prefix ?? "xmlns".toPointer() {
           xmlXPathRegisterNs(context, prefix, href)
         }
 
