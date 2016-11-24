@@ -16,6 +16,7 @@ open class Document {
   }
 
   let cDocument: xmlDocPtr
+
   public let rootElement: Element
 
   // MARK: - Initialization
@@ -80,5 +81,9 @@ open class Document {
 
   open var encoding: String? {
     return cDocument.pointee.encoding.toString()
+  }
+
+  public var hasNamespace: Bool {
+    return rootElement.ns != nil
   }
 }

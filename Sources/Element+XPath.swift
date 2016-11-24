@@ -11,7 +11,7 @@ import Clibxml2
 
 public extension Element {
 
-  func elements(XPath: String, predicate: ((Element) -> Bool)? = nil) -> [Element] {
+  func elements(XPath: String, namespace: String? = nil, predicate: ((Element) -> Bool)? = nil) -> [Element] {
     guard let cXPath = cXPathObject(XPath: XPath)
     else {
       return []
@@ -38,7 +38,7 @@ public extension Element {
     }
   }
 
-  func cXPathObject(XPath: String) -> xmlXPathObjectPtr? {
+  func cXPathObject(XPath: String, namespace: String? = nil) -> xmlXPathObjectPtr? {
     guard let context = xmlXPathNewContext(self.cNode.pointee.doc)
       else {
         return nil
@@ -55,7 +55,7 @@ public extension Element {
       var ns = node.pointee.nsDef
       while ns != nil {
         if let href = ns?.pointee.href,
-          let prefix = ns?.pointee.prefix ?? "xmlns".toPointer() {
+          let prefix = ns?.pointee.prefix ?? namespace?.toPointer() {
           xmlXPathRegisterNs(context, prefix, href)
         }
 
