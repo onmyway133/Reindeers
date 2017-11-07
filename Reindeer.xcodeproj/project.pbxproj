@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D2525A551DAAD1AB002E759E /* Element+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2525A541DAAD1AB002E759E /* Element+Query.swift */; };
 		D2525A561DAAD1AB002E759E /* Element+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2525A541DAAD1AB002E759E /* Element+Query.swift */; };
+		D25A290C1FB1F4A7008677F7 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680471DA99E6C00F42E33 /* Error.swift */; };
 		D29680371DA98BB600F42E33 /* Reindeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680361DA98BB600F42E33 /* Reindeer.swift */; };
 		D29680381DA98BB600F42E33 /* Reindeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680361DA98BB600F42E33 /* Reindeer.swift */; };
 		D29680421DA99B8200F42E33 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680411DA99B8200F42E33 /* Document.swift */; };
@@ -273,7 +274,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Khoa Pham";
 				TargetAttributes = {
 					D5B2E89E1C3A780C00C0327D = {
@@ -386,6 +387,7 @@
 				D29680501DAA691A00F42E33 /* Element+XPath.swift in Sources */,
 				D29680381DA98BB600F42E33 /* Reindeer.swift in Sources */,
 				D29680461DA99B8E00F42E33 /* Document.swift in Sources */,
+				D25A290C1FB1F4A7008677F7 /* Error.swift in Sources */,
 				D296804D1DAA311100F42E33 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,13 +425,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -466,6 +476,7 @@
 				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = "${SRCROOT}/Cocoapods/watchos";
 				"SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]" = "${SRCROOT}/Cocoapods/watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -480,13 +491,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -515,6 +534,8 @@
 				"SWIFT_INCLUDE_PATHS[sdk=macosx*]" = "${SRCROOT}/Cocoapods/macosx";
 				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = "${SRCROOT}/Cocoapods/watchos";
 				"SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]" = "${SRCROOT}/Cocoapods/watchsimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -526,6 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -538,7 +560,6 @@
 				PRODUCT_NAME = Reindeer;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -546,6 +567,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -557,7 +579,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Reindeer-iOS";
 				PRODUCT_NAME = Reindeer;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -575,7 +596,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.ReindeerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -592,7 +612,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.ReindeerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -616,7 +635,6 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -639,7 +657,6 @@
 				PRODUCT_NAME = Reindeer;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -661,7 +678,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -682,7 +698,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Reindeer-MacTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
