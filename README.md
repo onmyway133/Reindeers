@@ -1,12 +1,10 @@
 # Reindeer
-xml in Swift
 
-[![CI Status](http://img.shields.io/travis/onmyway133/Reindeer.svg?style=flat)](https://travis-ci.org/onmyway133/Reindeer)
 [![Version](https://img.shields.io/cocoapods/v/Reindeer.svg?style=flat)](http://cocoadocs.org/docsets/Reindeer)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Reindeer.svg?style=flat)](http://cocoadocs.org/docsets/Reindeer)
 [![Platform](https://img.shields.io/cocoapods/p/Reindeer.svg?style=flat)](http://cocoadocs.org/docsets/Reindeer)
-![Swift](https://img.shields.io/badge/%20in-swift%203.0-orange.svg)
+![Swift](https://img.shields.io/badge/%20in-swift%204.0-orange.svg)
 
 ![](Screenshots/Banner.png)
 
