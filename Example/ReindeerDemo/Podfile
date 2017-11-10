@@ -3,6 +3,6 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'ReindeerDemo' do
- pod 'Reindeer', path: '../../'
+ pod 'Reindeer', git: 'https://github.com/onmyway133/Reindeer'
 end
 
