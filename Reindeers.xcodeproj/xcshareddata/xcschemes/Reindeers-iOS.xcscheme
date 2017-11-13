@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-               BuildableName = "Reindeer.framework"
-               BlueprintName = "Reindeer-iOS"
-               ReferencedContainer = "container:Reindeer.xcodeproj">
+               BuildableName = "Reindeers.framework"
+               BlueprintName = "Reindeers-iOS"
+               ReferencedContainer = "container:Reindeers.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,7 +36,7 @@
                BlueprintIdentifier = "D5B2E8A81C3A780C00C0327D"
                BuildableName = "Reindeer-iOS-Tests.xctest"
                BlueprintName = "Reindeer-iOS-Tests"
-               ReferencedContainer = "container:Reindeer.xcodeproj">
+               ReferencedContainer = "container:Reindeers.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-            BuildableName = "Reindeer.framework"
-            BlueprintName = "Reindeer-iOS"
-            ReferencedContainer = "container:Reindeer.xcodeproj">
+            BuildableName = "Reindeers.framework"
+            BlueprintName = "Reindeers-iOS"
+            ReferencedContainer = "container:Reindeers.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-            BuildableName = "Reindeer.framework"
-            BlueprintName = "Reindeer-iOS"
-            ReferencedContainer = "container:Reindeer.xcodeproj">
+            BuildableName = "Reindeers.framework"
+            BlueprintName = "Reindeers-iOS"
+            ReferencedContainer = "container:Reindeers.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-            BuildableName = "Reindeer.framework"
-            BlueprintName = "Reindeer-iOS"
-            ReferencedContainer = "container:Reindeer.xcodeproj">
+            BuildableName = "Reindeers.framework"
+            BlueprintName = "Reindeers-iOS"
+            ReferencedContainer = "container:Reindeers.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
