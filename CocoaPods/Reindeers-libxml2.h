@@ -1,4 +1,3 @@
-#import <libxml2/libxml/parser.h>
 #import <libxml2/libxml/HTMLparser.h>
 #import <libxml2/libxml/HTMLtree.h>
 #import <libxml2/libxml/xmlreader.h>
