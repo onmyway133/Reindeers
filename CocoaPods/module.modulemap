@@ -1,4 +1,4 @@
-module libxml2 [system] {
+module Clibxml2 [system] {
     link "xml2"
     umbrella header "Reindeers-libxml2.h"
     export *
