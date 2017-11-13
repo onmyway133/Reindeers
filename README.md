@@ -12,6 +12,7 @@
 
 - Use libxml2
 - Based on https://github.com/mattt/Ono
+- Used in [Snowflake](https://github.com/onmyway133/Snowflake)
 
 ## Usage
 
