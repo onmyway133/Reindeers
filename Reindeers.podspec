@@ -25,5 +25,5 @@ Pod::Spec.new do |s|
     'SWIFT_VERSION' => '4.0'
   }
 
-  s.library = "xml2"
+  #s.library = "xml2"
 end
