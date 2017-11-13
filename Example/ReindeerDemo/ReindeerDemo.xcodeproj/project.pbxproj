@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E95A97998B7024712BC4779 /* Pods_ReindeerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F68D5351EB4C219F513DDD /* Pods_ReindeerDemo.framework */; };
+		4F9921EBCF1BF220C5282FBA /* Pods_ReindeerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF0E4022225DD5B2B9EDEF1 /* Pods_ReindeerDemo.framework */; };
 		D5C7F74E1C3BC9CE008CDDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F74C1C3BC9CE008CDDBA /* LaunchScreen.storyboard */; };
 		D5C7F75B1C3BCA1E008CDDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */; };
 		D5C7F75C1C3BCA1E008CDDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */; };
@@ -15,9 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19F68D5351EB4C219F513DDD /* Pods_ReindeerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReindeerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0D005C1AF7057EAA3E50B44 /* Pods-ReindeerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReindeerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo.release.xcconfig"; sourceTree = "<group>"; };
-		C0F4E7D57644169EC2521F1D /* Pods-ReindeerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReindeerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		30D3616F29D09986E7255190 /* Pods-ReindeerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReindeerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		68BD9D5B083AAEB56141B2C0 /* Pods-ReindeerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReindeerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7EF0E4022225DD5B2B9EDEF1 /* Pods_ReindeerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReindeerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C7F7401C3BC9CE008CDDBA /* ReindeerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReindeerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C7F74D1C3BC9CE008CDDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C7F74F1C3BC9CE008CDDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,20 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E95A97998B7024712BC4779 /* Pods_ReindeerDemo.framework in Frameworks */,
+				4F9921EBCF1BF220C5282FBA /* Pods_ReindeerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9EAC011A38054142C8B2D2E0 /* Pods */ = {
+		00AABF0973CF7FD8AAE3864A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C0F4E7D57644169EC2521F1D /* Pods-ReindeerDemo.debug.xcconfig */,
-				B0D005C1AF7057EAA3E50B44 /* Pods-ReindeerDemo.release.xcconfig */,
+				68BD9D5B083AAEB56141B2C0 /* Pods-ReindeerDemo.debug.xcconfig */,
+				30D3616F29D09986E7255190 /* Pods-ReindeerDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B36C7406A663D1FA1D30924B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EF0E4022225DD5B2B9EDEF1 /* Pods_ReindeerDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D5C7F7371C3BC9CE008CDDBA = {
@@ -52,8 +60,8 @@
 			children = (
 				D5C7F7421C3BC9CE008CDDBA /* ReindeerDemo */,
 				D5C7F7411C3BC9CE008CDDBA /* Products */,
-				9EAC011A38054142C8B2D2E0 /* Pods */,
-				D8D177381779B10C26DE4D64 /* Frameworks */,
+				00AABF0973CF7FD8AAE3864A /* Pods */,
+				B36C7406A663D1FA1D30924B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +109,6 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		D8D177381779B10C26DE4D64 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				19F68D5351EB4C219F513DDD /* Pods_ReindeerDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,12 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5C7F7521C3BC9CE008CDDBA /* Build configuration list for PBXNativeTarget "ReindeerDemo" */;
 			buildPhases = (
-				9014245F3ECFB7218C642C62 /* [CP] Check Pods Manifest.lock */,
+				D4F3877081A3F0FD8333FE8C /* [CP] Check Pods Manifest.lock */,
 				D5C7F73C1C3BC9CE008CDDBA /* Sources */,
 				D5C7F73D1C3BC9CE008CDDBA /* Frameworks */,
 				D5C7F73E1C3BC9CE008CDDBA /* Resources */,
-				AB2828955DCC1F8359B1144C /* [CP] Embed Pods Frameworks */,
-				109FE26A032605B8840CACDA /* [CP] Copy Pods Resources */,
+				78FF73081B672DB9060201CE /* [CP] Embed Pods Frameworks */,
+				6AB56BD6F7A2967B45670CB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,7 +178,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		109FE26A032605B8840CACDA /* [CP] Copy Pods Resources */ = {
+		6AB56BD6F7A2967B45670CB8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,25 +193,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9014245F3ECFB7218C642C62 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReindeerDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB2828955DCC1F8359B1144C /* [CP] Embed Pods Frameworks */ = {
+		78FF73081B672DB9060201CE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,6 +209,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4F3877081A3F0FD8333FE8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReindeerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -357,7 +357,7 @@
 		};
 		D5C7F7531C3BC9CE008CDDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0F4E7D57644169EC2521F1D /* Pods-ReindeerDemo.debug.xcconfig */;
+			baseConfigurationReference = 68BD9D5B083AAEB56141B2C0 /* Pods-ReindeerDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -370,7 +370,7 @@
 		};
 		D5C7F7541C3BC9CE008CDDBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0D005C1AF7057EAA3E50B44 /* Pods-ReindeerDemo.release.xcconfig */;
+			baseConfigurationReference = 30D3616F29D09986E7255190 /* Pods-ReindeerDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

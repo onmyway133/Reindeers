@@ -1,5 +1,5 @@
 PODS:
-  - Reindeers (1.0.0)
+  - Reindeers (1.1.0)
 
 DEPENDENCIES:
   - Reindeers (from `https://github.com/onmyway133/Reindeers`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Reindeers:
-    :commit: f149d0fb79bb67b0026b94f77e7fe26d9f259860
+    :commit: e46c7b7574dd974254ffee65bd1d7d6e10f9f6c5
     :git: https://github.com/onmyway133/Reindeers
 
 SPEC CHECKSUMS:
-  Reindeers: 26d2c6a073c8758d9a71537ae24c0e5ae60aca9f
+  Reindeers: 60236e37c0cb7f43a950a73da5697228304b8351
 
 PODFILE CHECKSUM: 9405cee49facf11d11b2a504ddb23f321f871772
 
