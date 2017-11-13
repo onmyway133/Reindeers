@@ -123,7 +123,7 @@ body?.elements(XPath: "//div") { element in
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Reindeers', git: 'https://github.com/onmyway133/Reindeers'
+pod 'Reindeers'
 ```
 
 **Reindeers** is also available through [Carthage](https://github.com/Carthage/Carthage).
