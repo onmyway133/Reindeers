@@ -33,7 +33,7 @@
 ```
 
 ```swift
-let data = Utils.load(fileName: "test4", ext: "svg")
+let data = doItYourselfToLoadXMLStringFrom(fileName: "test4", ext: "svg")
 let document = try! Document(data: data)
 
 document.rootElement.name
