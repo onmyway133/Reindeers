@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D23012D81FB9B9A800F6DD45 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680411DA99B8200F42E33 /* Document.swift */; };
+		D23012D91FB9B9A800F6DD45 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680431DA99B8800F42E33 /* Element.swift */; };
+		D23012DA1FB9B9A800F6DD45 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680471DA99E6C00F42E33 /* Error.swift */; };
+		D23012DB1FB9B9A800F6DD45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296804B1DAA311100F42E33 /* Extensions.swift */; };
+		D23012DC1FB9B9A800F6DD45 /* Element+XPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296804E1DAA691A00F42E33 /* Element+XPath.swift */; };
+		D23012DD1FB9B9A800F6DD45 /* Element+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2525A541DAAD1AB002E759E /* Element+Query.swift */; };
 		D2525A551DAAD1AB002E759E /* Element+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2525A541DAAD1AB002E759E /* Element+Query.swift */; };
 		D2525A561DAAD1AB002E759E /* Element+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2525A541DAAD1AB002E759E /* Element+Query.swift */; };
 		D25A290C1FB1F4A7008677F7 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29680471DA99E6C00F42E33 /* Error.swift */; };
@@ -415,6 +421,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23012D91FB9B9A800F6DD45 /* Element.swift in Sources */,
+				D23012DC1FB9B9A800F6DD45 /* Element+XPath.swift in Sources */,
+				D23012DA1FB9B9A800F6DD45 /* Error.swift in Sources */,
+				D23012DD1FB9B9A800F6DD45 /* Element+Query.swift in Sources */,
+				D23012D81FB9B9A800F6DD45 /* Document.swift in Sources */,
+				D23012DB1FB9B9A800F6DD45 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +576,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -586,13 +599,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = iphoneos;
-				"SWIFT_INCLUDE_PATHS[sdk=appletvos*]" = "${SRCROOT}/Cocoapods/appletvos";
-				"SWIFT_INCLUDE_PATHS[sdk=appletvsimulator*]" = "${SRCROOT}/Cocoapods/appletvsimulator";
-				"SWIFT_INCLUDE_PATHS[sdk=iphoneos*]" = "${SRCROOT}/Cocoapods/iphoneos";
-				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = "${SRCROOT}/Cocoapods/iphonesimulator";
-				"SWIFT_INCLUDE_PATHS[sdk=macosx*]" = "${SRCROOT}/Cocoapods/macosx";
-				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = "${SRCROOT}/Cocoapods/watchos";
-				"SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]" = "${SRCROOT}/Cocoapods/watchsimulator";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Cocoapods";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -630,6 +637,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -645,13 +653,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = iphoneos;
-				"SWIFT_INCLUDE_PATHS[sdk=appletvos*]" = "${SRCROOT}/Cocoapods/appletvos";
-				"SWIFT_INCLUDE_PATHS[sdk=appletvsimulator*]" = "${SRCROOT}/Cocoapods/appletvsimulator";
-				"SWIFT_INCLUDE_PATHS[sdk=iphoneos*]" = "${SRCROOT}/Cocoapods/iphoneos";
-				"SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]" = "${SRCROOT}/Cocoapods/iphonesimulator";
-				"SWIFT_INCLUDE_PATHS[sdk=macosx*]" = "${SRCROOT}/Cocoapods/macosx";
-				"SWIFT_INCLUDE_PATHS[sdk=watchos*]" = "${SRCROOT}/Cocoapods/watchos";
-				"SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]" = "${SRCROOT}/Cocoapods/watchsimulator";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Cocoapods";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
