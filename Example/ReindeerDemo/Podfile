@@ -1,8 +1,15 @@
-use_frameworks!
 
-platform :ios, '9.0'
+
 
 target 'ReindeerDemo' do
- pod 'Reindeers', git: 'https://github.com/onmyway133/Reindeers'
+  use_frameworks!
+  platform :ios, '9.0'
+  pod 'Reindeers', git: 'https://github.com/onmyway133/Reindeers'
+
 end
 
+target 'ReindeerMacApp' do
+  use_frameworks!
+  platform :osx, '10.12'
+  pod 'Reindeers', git: 'https://github.com/onmyway133/Reindeers'
+end
