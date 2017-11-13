@@ -550,7 +550,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Reindeer-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Reindeers-iOS";
 				PRODUCT_NAME = Reindeers;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -570,7 +570,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Reindeer-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Reindeers-iOS";
 				PRODUCT_NAME = Reindeers;
 				SKIP_INSTALL = YES;
 			};
@@ -618,7 +618,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Reindeer-Mac";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Reindeers-Mac";
 				PRODUCT_NAME = Reindeers;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -641,7 +641,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Reindeer-Mac";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fantageek.Reindeers-Mac";
 				PRODUCT_NAME = Reindeers;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
