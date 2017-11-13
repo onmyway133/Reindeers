@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.preserve_path = 'Cocoapods/*'
   s.xcconfig = {
     'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2',
-    'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/Cocoapods',
+    'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/Reindeers/Cocoapods',
     'SWIFT_VERSION' => '4.0'
   }
 
