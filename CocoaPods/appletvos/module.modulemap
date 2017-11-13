@@ -1,9 +1,0 @@
-module Clibxml2 [system] {
-  header "/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/usr/include/libxml2/libxml/parser.h"
-  header "/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/usr/include/libxml2/libxml/HTMLparser.h"
-  header "/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/usr/include/libxml2/libxml/HTMLtree.h"
-  header "/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/usr/include/libxml2/libxml/xmlreader.h"
-  header "/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/usr/include/libxml2/libxml/xpath.h"
-  header "/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/usr/include/libxml2/libxml/xpathInternals.h"
-export *
-}

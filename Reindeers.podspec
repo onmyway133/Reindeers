@@ -16,20 +16,13 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '10.0'
 
   s.requires_arc = true
-  s.source_files = 'Sources/**/*.swift'
+  s.source_files = 'Sources/**/*'
 
-  s.preserve_paths = 'CocoaPods/**/*'
-  s.pod_target_xcconfig = {
-    'SWIFT_INCLUDE_PATHS[sdk=macosx*]'           => '$(PODS_ROOT)/Reindeers/CocoaPods/macosx',
-    'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]'         => '$(PODS_ROOT)/Reindeers/CocoaPods/iphoneos',
-    'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]'  => '$(PODS_ROOT)/Reindeers/CocoaPods/iphonesimulator',
-    'SWIFT_INCLUDE_PATHS[sdk=appletvos*]'        => '$(PODS_ROOT)/Reindeers/CocoaPods/appletvos',
-    'SWIFT_INCLUDE_PATHS[sdk=appletvsimulator*]' => '$(PODS_ROOT)/Reindeers/CocoaPods/appletvsimulator',
-    'SWIFT_INCLUDE_PATHS[sdk=watchos*]'          => '$(PODS_ROOT)/Reindeers/CocoaPods/watchos',
-    'SWIFT_INCLUDE_PATHS[sdk=watchsimulator*]'   => '$(PODS_ROOT)/Reindeers/CocoaPods/watchsimulator',
+  s.xcconfig = {
+    'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2',
+    'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/Cocoapods',
     'SWIFT_VERSION' => '4.0'
   }
 
   s.library = "xml2"
-  #s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
 end
