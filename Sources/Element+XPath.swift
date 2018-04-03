@@ -19,7 +19,7 @@ public extension Element {
 
     let indexes = Array(0..<Int(cXPath.pointee.nodesetval.pointee.nodeNr))
 
-    return indexes.flatMap { index in
+    return indexes.compactMap { index in
       guard index < Int(cXPath.pointee.nodesetval.pointee.nodeNr)
       else {
         return nil
