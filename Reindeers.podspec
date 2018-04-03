@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Reindeers"
   s.summary          = "XML in Swift"
-  s.version          = "1.4.0"
+  s.version          = "1.5.0"
   s.homepage         = "https://github.com/onmyway133/Reindeers"
   s.license          = 'MIT'
   s.author           = { "Khoa Pham" => "onmyway133@gmail.com" }
@@ -24,5 +24,5 @@ Pod::Spec.new do |s|
     'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/Reindeers/Cocoapods'
   }
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
 end
