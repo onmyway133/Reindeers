@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Reindeers"
   s.summary          = "XML in Swift"
-  s.version          = "2.1.0"
+  s.version          = "2.2.0"
   s.homepage         = "https://github.com/onmyway133/Reindeers"
   s.license          = 'MIT'
   s.author           = { "Khoa Pham" => "onmyway133@gmail.com" }

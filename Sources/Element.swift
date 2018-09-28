@@ -45,7 +45,7 @@ open class Element: Equatable {
     return nil
   }()
 
-  public var content: String? = {
+  public var content: String? {
     return xmlNodeGetContent(self.cNode).toString()
   }
 
