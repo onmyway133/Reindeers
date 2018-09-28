@@ -14,11 +14,11 @@ public extension Element {
     let openTag = "<\(name ?? "")\(toAttributeString())>"
     let indentation = Array(repeating: "  ", count: level).joined()
 
-    var between = indentation
+    let between: String
     if children().isEmpty {
-      between += content ?? ""
+      between = (content ?? "")
     } else {
-      between += children().map({ $0.toXMLString(level: level + 1) }).joined()
+      between = children().map({ $0.toXMLString(level: level + 1) }).joined()
     }
 
     let endTag = "</\(name ?? "")>"
