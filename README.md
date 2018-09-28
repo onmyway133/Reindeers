@@ -118,6 +118,13 @@ body?.elements(XPath: "//div") { element in
 }
 ```
 
+- Turn Element to String
+
+```
+element.toAttributeString()
+element.toXMLString()
+```
+
 ## Installation
 
 **Reindeers** is available through [CocoaPods](http://cocoapods.org). To install
