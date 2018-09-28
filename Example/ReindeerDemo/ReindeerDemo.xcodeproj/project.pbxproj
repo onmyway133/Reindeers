@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87249C35373BD2621FBCADDB /* Pods_ReindeerMacApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3930CF1BB274E166E1A362F0 /* Pods_ReindeerMacApp.framework */; };
-		A638486EA68770AF539EB6ED /* Pods_ReindeerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93633F4FC8F83BA756AA1254 /* Pods_ReindeerDemo.framework */; };
+		6F32F807D85DF35693A7B269 /* Pods_ReindeerMacApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358C550DEB5B69E975059844 /* Pods_ReindeerMacApp.framework */; };
 		D24C34D91FB9AC4B00954E1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C34D81FB9AC4B00954E1B /* AppDelegate.swift */; };
 		D24C34DB1FB9AC4B00954E1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24C34DA1FB9AC4B00954E1B /* ViewController.swift */; };
 		D24C34DD1FB9AC4B00954E1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24C34DC1FB9AC4B00954E1B /* Assets.xcassets */; };
@@ -17,13 +16,13 @@
 		D5C7F75B1C3BCA1E008CDDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */; };
 		D5C7F75C1C3BCA1E008CDDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */; };
 		D5C7F75D1C3BCA1E008CDDBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7F75A1C3BCA1E008CDDBA /* ViewController.swift */; };
+		F17A2DC8A42376138C3633AF /* Pods_ReindeerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846527C3792E3C137FA80E63 /* Pods_ReindeerDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12A727594E85C484B457666B /* Pods-ReindeerMacApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReindeerMacApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReindeerMacApp/Pods-ReindeerMacApp.release.xcconfig"; sourceTree = "<group>"; };
-		3930CF1BB274E166E1A362F0 /* Pods_ReindeerMacApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReindeerMacApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AA0EE6A3E146071D5D1A30A /* Pods-ReindeerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReindeerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo.release.xcconfig"; sourceTree = "<group>"; };
-		93633F4FC8F83BA756AA1254 /* Pods_ReindeerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReindeerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		358C550DEB5B69E975059844 /* Pods_ReindeerMacApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReindeerMacApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D4B6E69DE4699F2FE6D8A0E /* Pods-ReindeerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReindeerDemo.debug.xcconfig"; path = "Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		846527C3792E3C137FA80E63 /* Pods_ReindeerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReindeerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24C34D61FB9AC4B00954E1B /* ReindeerMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReindeerMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24C34D81FB9AC4B00954E1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D24C34DA1FB9AC4B00954E1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,8 +36,9 @@
 		D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5C7F75A1C3BCA1E008CDDBA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EF803CCC4DB5A46F830CDE0B /* Pods-ReindeerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReindeerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		F1CAA614166BA6DB2B98DD73 /* Pods-ReindeerMacApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReindeerMacApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReindeerMacApp/Pods-ReindeerMacApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E28DE3376DBE256247F2666D /* Pods-ReindeerMacApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReindeerMacApp.debug.xcconfig"; path = "Target Support Files/Pods-ReindeerMacApp/Pods-ReindeerMacApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F6990C168657614B3609D3E0 /* Pods-ReindeerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReindeerDemo.release.xcconfig"; path = "Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FB8BE2B5D098A09DA5F6E557 /* Pods-ReindeerMacApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReindeerMacApp.release.xcconfig"; path = "Target Support Files/Pods-ReindeerMacApp/Pods-ReindeerMacApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87249C35373BD2621FBCADDB /* Pods_ReindeerMacApp.framework in Frameworks */,
+				6F32F807D85DF35693A7B269 /* Pods_ReindeerMacApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,31 +54,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A638486EA68770AF539EB6ED /* Pods_ReindeerDemo.framework in Frameworks */,
+				F17A2DC8A42376138C3633AF /* Pods_ReindeerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		963E36423B58F6D6D5A5757C /* Frameworks */ = {
+		350BBF691084CF8390CA8CBB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93633F4FC8F83BA756AA1254 /* Pods_ReindeerDemo.framework */,
-				3930CF1BB274E166E1A362F0 /* Pods_ReindeerMacApp.framework */,
+				846527C3792E3C137FA80E63 /* Pods_ReindeerDemo.framework */,
+				358C550DEB5B69E975059844 /* Pods_ReindeerMacApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C7B8F019005A213856B56E6C /* Pods */ = {
+		6C086D046B58A658B0975F0C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EF803CCC4DB5A46F830CDE0B /* Pods-ReindeerDemo.debug.xcconfig */,
-				3AA0EE6A3E146071D5D1A30A /* Pods-ReindeerDemo.release.xcconfig */,
-				F1CAA614166BA6DB2B98DD73 /* Pods-ReindeerMacApp.debug.xcconfig */,
-				12A727594E85C484B457666B /* Pods-ReindeerMacApp.release.xcconfig */,
+				3D4B6E69DE4699F2FE6D8A0E /* Pods-ReindeerDemo.debug.xcconfig */,
+				F6990C168657614B3609D3E0 /* Pods-ReindeerDemo.release.xcconfig */,
+				E28DE3376DBE256247F2666D /* Pods-ReindeerMacApp.debug.xcconfig */,
+				FB8BE2B5D098A09DA5F6E557 /* Pods-ReindeerMacApp.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		D24C34D71FB9AC4B00954E1B /* ReindeerMacApp */ = {
@@ -100,8 +100,8 @@
 				D5C7F7421C3BC9CE008CDDBA /* ReindeerDemo */,
 				D24C34D71FB9AC4B00954E1B /* ReindeerMacApp */,
 				D5C7F7411C3BC9CE008CDDBA /* Products */,
-				C7B8F019005A213856B56E6C /* Pods */,
-				963E36423B58F6D6D5A5757C /* Frameworks */,
+				6C086D046B58A658B0975F0C /* Pods */,
+				350BBF691084CF8390CA8CBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,12 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D24C34E51FB9AC4B00954E1B /* Build configuration list for PBXNativeTarget "ReindeerMacApp" */;
 			buildPhases = (
-				9AF3FEBDE8CC65B33A040371 /* [CP] Check Pods Manifest.lock */,
+				9D08E4ED80CBE5A991AFBD49 /* [CP] Check Pods Manifest.lock */,
 				D24C34D21FB9AC4B00954E1B /* Sources */,
 				D24C34D31FB9AC4B00954E1B /* Frameworks */,
 				D24C34D41FB9AC4B00954E1B /* Resources */,
-				08EA323925EE353243171152 /* [CP] Embed Pods Frameworks */,
-				F4484165480E94EFE02AC383 /* [CP] Copy Pods Resources */,
+				C14EC55A3E99B77C9D28242C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,12 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5C7F7521C3BC9CE008CDDBA /* Build configuration list for PBXNativeTarget "ReindeerDemo" */;
 			buildPhases = (
-				09356976A13212B0392720B8 /* [CP] Check Pods Manifest.lock */,
+				769A90D17AFE22472A59DE3F /* [CP] Check Pods Manifest.lock */,
 				D5C7F73C1C3BC9CE008CDDBA /* Sources */,
 				D5C7F73D1C3BC9CE008CDDBA /* Frameworks */,
 				D5C7F73E1C3BC9CE008CDDBA /* Resources */,
-				D4567A3D4B679DC1DBD4B84D /* [CP] Embed Pods Frameworks */,
-				53E4DC6A5E5B85768352D8DF /* [CP] Copy Pods Resources */,
+				2FB15289F1C35BC84F4E800E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,7 +198,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Hyper Interaktiv AS";
 				TargetAttributes = {
 					D24C34D51FB9AC4B00954E1B = {
@@ -253,34 +251,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08EA323925EE353243171152 /* [CP] Embed Pods Frameworks */ = {
+		2FB15289F1C35BC84F4E800E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ReindeerMacApp/Pods-ReindeerMacApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Reindeers-macOS/Reindeers.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Reindeers-iOS/Reindeers.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reindeers.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReindeerMacApp/Pods-ReindeerMacApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		09356976A13212B0392720B8 /* [CP] Check Pods Manifest.lock */ = {
+		769A90D17AFE22472A59DE3F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ReindeerDemo-checkManifestLockResult.txt",
 			);
@@ -289,31 +295,20 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		53E4DC6A5E5B85768352D8DF /* [CP] Copy Pods Resources */ = {
+		9D08E4ED80CBE5A991AFBD49 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9AF3FEBDE8CC65B33A040371 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ReindeerMacApp-checkManifestLockResult.txt",
 			);
@@ -322,37 +317,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D4567A3D4B679DC1DBD4B84D /* [CP] Embed Pods Frameworks */ = {
+		C14EC55A3E99B77C9D28242C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Reindeers-iOS/Reindeers.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ReindeerMacApp/Pods-ReindeerMacApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Reindeers-macOS/Reindeers.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reindeers.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReindeerDemo/Pods-ReindeerDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F4484165480E94EFE02AC383 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReindeerMacApp/Pods-ReindeerMacApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReindeerMacApp/Pods-ReindeerMacApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -400,7 +384,7 @@
 /* Begin XCBuildConfiguration section */
 		D24C34E31FB9AC4B00954E1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1CAA614166BA6DB2B98DD73 /* Pods-ReindeerMacApp.debug.xcconfig */;
+			baseConfigurationReference = E28DE3376DBE256247F2666D /* Pods-ReindeerMacApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -420,13 +404,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		D24C34E41FB9AC4B00954E1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12A727594E85C484B457666B /* Pods-ReindeerMacApp.release.xcconfig */;
+			baseConfigurationReference = FB8BE2B5D098A09DA5F6E557 /* Pods-ReindeerMacApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -445,7 +429,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.ReindeerMacApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -461,12 +445,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -498,7 +484,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -514,12 +500,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -544,14 +532,14 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		D5C7F7531C3BC9CE008CDDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF803CCC4DB5A46F830CDE0B /* Pods-ReindeerDemo.debug.xcconfig */;
+			baseConfigurationReference = 3D4B6E69DE4699F2FE6D8A0E /* Pods-ReindeerDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -559,12 +547,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.ReindeerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		D5C7F7541C3BC9CE008CDDBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AA0EE6A3E146071D5D1A30A /* Pods-ReindeerDemo.release.xcconfig */;
+			baseConfigurationReference = F6990C168657614B3609D3E0 /* Pods-ReindeerDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -572,6 +561,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.ReindeerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
