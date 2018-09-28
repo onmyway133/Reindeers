@@ -86,4 +86,10 @@ class Tests: XCTestCase {
     XCTAssertEqual(document.rootElement.elements(XPath: "//circle").first?.attributes["stroke"], "green")
   }
 
+  func testToXMLString() {
+    let data = Utils.load(fileName: "test3", ext: "xml")
+    let document = try! Document(data: data)
+
+    print(document.rootElement.toXMLString())
+  }
 }
