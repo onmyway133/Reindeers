@@ -45,9 +45,9 @@ open class Element: Equatable {
     return nil
   }()
 
-  public lazy var content: String? = {
+  public var content: String? = {
     return xmlNodeGetContent(self.cNode).toString()
-  }()
+  }
 
   public lazy var nextSibling: Element? = {
     if let cSibling = self.cNode.pointee.next {
@@ -65,7 +65,7 @@ open class Element: Equatable {
     return nil
   }()
 
-  public lazy var attributes: [String: String] = {
+  public var attributes: [String: String] {
     var dict: [String: String] = [:]
 
     var property = self.cNode.pointee.properties
@@ -79,7 +79,7 @@ open class Element: Equatable {
     }
 
     return dict
-  }()
+  }
 }
 
 public func == (left: Element, right: Element) -> Bool {
