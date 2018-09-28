@@ -10,26 +10,33 @@ import Foundation
 import Clibxml2
 
 public extension Element {
-  public func toXMLString() -> String {
-    let openTag = "<\(name ?? "") \(toAttributeString()) >"
+  public func toXMLString(level: Int = 0) -> String {
+    let openTag = "<\(name ?? "")\(toAttributeString())>"
+    let indentation = Array(repeating: "  ", count: level).joined()
 
-    let between: String
+    var between = indentation
     if children().isEmpty {
-      between = content ?? ""
+      between += content ?? ""
     } else {
-      between = children().map({ $0.toXMLString() }).joined()
+      between += children().map({ $0.toXMLString(level: level + 1) }).joined()
     }
 
     let endTag = "</\(name ?? "")>"
 
-    return openTag + between + endTag
+    return indentation + openTag + "\n"
+      + indentation + between + "\n"
+      + indentation + endTag + "\n"
   }
 
   public func toAttributeString() -> String {
-    return attributes
-      .map({ (key, value) in
-        return "\(key)=\"\(value)\""
-      })
-      .joined(separator: " ")
+    if attributes.isEmpty {
+      return ""
+    } else {
+      return " " + attributes
+        .map({ (key, value) in
+          return "\(key)=\"\(value)\""
+        })
+        .joined(separator: " ")
+    }
   }
 }
