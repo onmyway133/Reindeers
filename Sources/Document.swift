@@ -31,7 +31,7 @@ open class Document {
   }
 
   public convenience init(data: Data, kind: DocumentKind = .xml) throws {
-    let bytes = data.withUnsafeBytes {
+    let bytes = data.withUnsafePointer {
       [Int8](UnsafeBufferPointer(start: $0, count: data.count))
     }
 
@@ -41,7 +41,7 @@ open class Document {
   public convenience init(nsData: NSData, kind: DocumentKind = .xml) throws {
     var bytes = [UInt8](repeatElement(0, count: nsData.length))
     nsData.getBytes(&bytes, length:bytes.count * MemoryLayout<UInt8>.size)
-    let data = Data(bytes: bytes)
+    let data = Data(bytes)
 
     try self.init(data: data)
   }
