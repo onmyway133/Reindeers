@@ -11,7 +11,7 @@ import Clibxml2
 
 public extension Element {
 
-  public func children(predicate: ((Element, Int) -> Bool)? = nil) -> [Element] {
+  func children(predicate: ((Element, Int) -> Bool)? = nil) -> [Element] {
     var elements = [Element]()
     var cursor = self.cNode.pointee.children
     var index = 0
@@ -36,23 +36,23 @@ public extension Element {
     return elements
   }
 
-  public func children(name: String) -> [Element] {
+  func children(name: String) -> [Element] {
     return children { element, index in
       return element.name == name
     }
   }
 
-  public func children(indexes: [Int]) -> [Element] {
+  func children(indexes: [Int]) -> [Element] {
     return children { element, index in
       return indexes.contains(index)
     }
   }
 
-  public func child(index: Int) -> Element? {
+  func child(index: Int) -> Element? {
     return children(indexes: [index]).first
   }
 
-  public func firstChild(name: String) -> Element? {
+  func firstChild(name: String) -> Element? {
     return children(name: name).first
   }
 }

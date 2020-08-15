@@ -22,6 +22,22 @@ extension UnsafeMutablePointer {
   }
 }
 
+extension Data {
+
+  // With help from Michael Tsai
+  // https://mjtsai.com/blog/2019/03/27/swift-5-released/
+    func withUnsafePointer<ResultType, ContentType: BinaryInteger>(_ body: (UnsafePointer<ContentType>) throws -> ResultType) rethrows -> ResultType {
+    return try self.withUnsafeBytes { (rawBufferPointer: UnsafeRawBufferPointer) -> ResultType in
+      let unsafeBufferPointer = rawBufferPointer.bindMemory(to: ContentType.self)
+      guard let unsafePointer = unsafeBufferPointer.baseAddress else {
+        var int: ContentType = 0
+        return try body(&int)
+      }
+      return try body(unsafePointer)
+    }
+  }
+}
+
 extension String {
 
   func toPointer() -> UnsafePointer<UInt8>? {
@@ -31,7 +47,7 @@ extension String {
     let stream = OutputStream(toBuffer: buffer, capacity: data.count)
 
     stream.open()
-    data.withUnsafeBytes({ (p: UnsafePointer<UInt8>) -> Void in
+    data.withUnsafePointer({ (p: UnsafePointer<UInt8>) -> Void in
       stream.write(p, maxLength: data.count)
     })
 

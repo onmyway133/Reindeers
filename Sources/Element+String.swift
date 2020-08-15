@@ -10,7 +10,7 @@ import Foundation
 import Clibxml2
 
 public extension Element {
-  public func toXMLString(level: Int = 0) -> String {
+  func toXMLString(level: Int = 0) -> String {
     let openTag = "<\(name ?? "")\(toAttributeString())>"
     let indentation = Array(repeating: "  ", count: level).joined()
 
@@ -28,7 +28,7 @@ public extension Element {
       + indentation + endTag + "\n"
   }
 
-  public func toAttributeString() -> String {
+  func toAttributeString() -> String {
     if attributes.isEmpty {
       return ""
     } else {
